@@ -28,30 +28,23 @@ export const Reviews: React.FC = () => {
   };
 
   return (
-    <section className="bg-white flex w-full flex-col items-center justify-center px-20 py-24 max-md:max-w-full max-md:px-5">
-      <div className="flex w-[800px] max-w-full flex-col items-stretch">
-        <h2 className="text-black text-5xl font-bold text-center self-center max-md:text-[40px]">
-          Reviews
-        </h2>
-        <p className="text-black text-lg font-normal text-center ml-[21px] mr-[22px] mt-2 max-md:max-w-full max-md:mr-2.5">
-          Geloof niet alleen mijn woorden. Dit zeggen ondernemers over de
-          samenwerking met mij.
+    <section className="w-full bg-white py-24 max-md:py-16">
+      <div className="max-w-6xl mx-auto w-full px-8 max-md:px-4 flex flex-col items-center">
+        <h2 className="text-black text-5xl font-bold text-center mb-2">Reviews</h2>
+        <p className="text-black text-lg font-normal text-center mb-8">
+          Geloof niet alleen mijn woorden. Dit zeggen ondernemers over de samenwerking met mij.
         </p>
-        <article className="bg-black flex flex-col items-center text-white font-normal text-center mt-16 px-[63px] py-[34px] max-md:max-w-full max-md:mt-10 max-md:px-5">
-          <div className="text-[32px]">
-            &quot;
-          </div>
-          <blockquote className="text-lg leading-[29px] self-stretch mt-[19px] max-md:max-w-full">
+        <article className="bg-black flex flex-col items-center text-white font-normal text-center w-full max-w-2xl mx-auto rounded-lg px-8 py-10 mb-8">
+          <div className="text-[32px]">&quot;</div>
+          <blockquote className="text-lg leading-[29px] self-stretch mt-4">
             {reviews[currentReview].quote}
           </blockquote>
-          <cite className="text-base font-semibold mt-[38px] not-italic">
+          <cite className="text-base font-semibold mt-8 not-italic">
             {reviews[currentReview].author}
           </cite>
-          <div className="text-sm">
-            {reviews[currentReview].company}
-          </div>
+          <div className="text-sm">{reviews[currentReview].company}</div>
         </article>
-        <div className="self-center flex w-[116px] max-w-full items-stretch gap-5 mt-8">
+        <div className="flex w-[116px] max-w-full items-stretch gap-5">
           <button 
             onClick={handlePrevious}
             className="hover:opacity-70 transition-opacity"

@@ -9,23 +9,21 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl, hasPlaceholder = false }) => {
   return (
-    <article className="bg-black border grow text-white w-full pt-px pb-6 border-black border-solid max-md:mt-10">
+    <article className="bg-zinc-900 rounded-lg shadow border border-zinc-800 text-white w-full flex flex-col h-full">
       {hasPlaceholder ? (
-        <div className="bg-white flex shrink-0 h-[200px]" />
+        <div className="bg-white h-48 w-full" />
       ) : (
         <img
           src={imageUrl}
           alt={title}
-          className="aspect-[1.46] object-contain w-full"
+          className="aspect-[1.46] object-cover w-full"
         />
       )}
-      <div className="flex flex-col mt-6 px-6 max-md:px-5">
-        <h3 className="text-xl font-semibold">
-          {title}
-        </h3>
-        <p className="text-sm font-normal leading-[21px] mt-2">
-          {description}
-        </p>
+      <div className="flex flex-col p-6 flex-1 justify-between">
+        <div>
+          <h3 className="text-xl font-semibold mb-2">{title}</h3>
+          <p className="text-sm font-normal leading-6">{description}</p>
+        </div>
       </div>
     </article>
   );
@@ -52,34 +50,23 @@ export const Projects: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col relative min-h-[761px] w-full items-center justify-center px-20 py-24 max-md:max-w-full max-md:px-5">
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/4bfaf042babf4f058c6e929fb8210c61/d25f9f2a203e08f7a7ef64dc97cb6b3df416fb43?placeholderIfAbsent=true"
-        alt="Projects background"
-        className="absolute h-full w-full object-cover inset-0"
-      />
-      <div className="relative flex w-full max-w-[990px] flex-col items-center max-md:max-w-full">
-        <h2 className="text-white text-5xl font-bold text-center max-md:text-[40px]">
-          Projecten
-        </h2>
-        <p className="text-white text-lg font-normal leading-[27px] text-center w-[756px] mt-2 max-md:max-w-full">
-          Echte projecten, echte resultaten. Bekijk hoe ik bedrijven heb
-          geholpen hun doelen te bereiken met strategisch design en
-          development.
+    <section className="w-full bg-black py-24 max-md:py-16">
+      <div className="max-w-6xl mx-auto w-full px-8 max-md:px-4">
+        <h2 className="text-white text-5xl font-bold text-center mb-2">Projecten</h2>
+        <p className="text-white text-lg text-center mb-12 max-w-2xl mx-auto">
+          Echte projecten, echte resultaten. Bekijk hoe ik bedrijven heb geholpen hun doelen te bereiken met strategisch design en development.
         </p>
-        <div className="self-stretch mt-16 max-md:max-w-full max-md:mt-10">
-          <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
-            {projects.map((project, index) => (
-              <div key={index} className="w-[33%] max-md:w-full max-md:ml-0">
-                <ProjectCard
-                  title={project.title}
-                  description={project.description}
-                  imageUrl={project.imageUrl}
-                  hasPlaceholder={project.hasPlaceholder}
-                />
-              </div>
-            ))}
-          </div>
+        <div className="w-full flex gap-6 max-md:flex-col">
+          {projects.map((project, index) => (
+            <div key={index} className="flex-1 min-w-0 flex">
+              <ProjectCard
+                title={project.title}
+                description={project.description}
+                imageUrl={project.imageUrl}
+                hasPlaceholder={project.hasPlaceholder}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
