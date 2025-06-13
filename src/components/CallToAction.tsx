@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SquaresBackground from './ui/SquaresBackground';
 
 export const CallToAction: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -12,8 +13,9 @@ export const CallToAction: React.FC = () => {
   };
 
   return (
-    <section className="w-full bg-black py-24 max-md:py-16">
-      <div className="max-w-6xl mx-auto w-full px-8 max-md:px-4 flex flex-col items-center justify-center text-center">
+    <section className="w-full bg-black py-24 max-md:py-16 relative overflow-hidden">
+      <SquaresBackground />
+      <div className="relative z-10 max-w-6xl mx-auto w-full px-8 max-md:px-4 flex flex-col items-center justify-center text-center">
         <div className="max-w-xl w-full flex flex-col items-center mx-auto">
           <h2 className="text-5xl font-bold text-white mb-2">Ready to improve your website?</h2>
           <p className="text-lg text-white mb-8">Laten we jouw project bespreken en kijken hoe ik je kan helpen jouw doelen te bereiken met behulp van design en development.</p>

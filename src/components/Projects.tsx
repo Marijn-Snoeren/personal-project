@@ -1,4 +1,5 @@
 import React from 'react';
+import SquaresBackground from './ui/SquaresBackground';
 
 interface ProjectCardProps {
   title: string;
@@ -44,14 +45,14 @@ export const Projects: React.FC = () => {
     {
       title: "GreenAI",
       description: "Slim dashboard voor duurzaamheidsdata met focus op overzicht, helderheid en gebruiksgemak.",
-      imageUrl: "",
-      hasPlaceholder: true
+      imageUrl: "https://cdn.builder.io/api/v1/image/assets/4bfaf042babf4f058c6e929fb8210c61/113cf74f7b7c67ee4dfb730bf0be747ef6e93791?placeholderIfAbsent=true"
     }
   ];
 
   return (
-    <section className="w-full bg-black py-24 max-md:py-16">
-      <div className="max-w-6xl mx-auto w-full px-8 max-md:px-4">
+    <section className="w-full bg-black py-24 max-md:py-16 relative overflow-hidden">
+      <SquaresBackground />
+      <div className="relative z-10 max-w-6xl mx-auto w-full px-8 max-md:px-4">
         <h2 className="text-white text-5xl font-bold text-center mb-2">Projecten</h2>
         <p className="text-white text-lg text-center mb-12 max-w-2xl mx-auto">
           Echte projecten, echte resultaten. Bekijk hoe ik bedrijven heb geholpen hun doelen te bereiken met strategisch design en development.
@@ -63,7 +64,6 @@ export const Projects: React.FC = () => {
                 title={project.title}
                 description={project.description}
                 imageUrl={project.imageUrl}
-                hasPlaceholder={project.hasPlaceholder}
               />
             </div>
           ))}

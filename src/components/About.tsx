@@ -1,4 +1,5 @@
 import React from 'react';
+import SquaresBackground from './ui/SquaresBackground';
 
 interface FeatureItemProps {
   title: string;
@@ -34,8 +35,9 @@ export const About: React.FC = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-24 max-md:py-16">
-      <div className="max-w-6xl mx-auto w-full px-8 max-md:px-4">
+    <section className="w-full bg-white py-24 max-md:py-16 relative overflow-hidden">
+      <SquaresBackground />
+      <div className="relative z-10 max-w-6xl mx-auto w-full px-8 max-md:px-4">
         <div className="flex gap-10 items-center max-md:flex-col max-md:gap-8">
           <div className="flex-1 flex items-center">
             <img

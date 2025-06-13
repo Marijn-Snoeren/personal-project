@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SquaresBackground from './ui/SquaresBackground';
 
 interface Review {
   quote: string;
@@ -28,8 +29,9 @@ export const Reviews: React.FC = () => {
   };
 
   return (
-    <section className="w-full bg-white py-24 max-md:py-16">
-      <div className="max-w-6xl mx-auto w-full px-8 max-md:px-4 flex flex-col items-center">
+    <section className="w-full bg-white py-24 max-md:py-16 relative overflow-hidden">
+      <SquaresBackground />
+      <div className="relative z-10 max-w-6xl mx-auto w-full px-8 max-md:px-4 flex flex-col items-center">
         <h2 className="text-black text-5xl font-bold text-center mb-2">Reviews</h2>
         <p className="text-black text-lg font-normal text-center mb-8">
           Geloof niet alleen mijn woorden. Dit zeggen ondernemers over de samenwerking met mij.
