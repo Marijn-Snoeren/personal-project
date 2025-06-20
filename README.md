@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+# 💼 Agency Website – Frontend & UI/UX Design
 
-## Project info
+Welkom bij de repository van mijn agency website! Deze website is ontwikkeld als onderdeel van mijn persoonlijke project waarin ik mijn eigen bedrijf heb opgezet binnen Frontend Development en UI/UX Design.
 
-**URL**: https://lovable.dev/projects/d70deef8-b11f-419b-9ed7-801723808161
+## 🖥️ Over de Website
 
-## How can I edit this code?
+Deze website is:
 
-There are several ways of editing your application.
+- **Modern en professioneel**: Ontworpen om mijn stijl, diensten en projecten als ontwerper en developer te reflecteren.
+- **Responsief**: Volledig geoptimaliseerd voor desktop, tablet en mobiel.
+- **Iteratief ontwikkeld**: Gebouwd aan de hand van meerdere design- en ontwikkelrondes.
 
-**Use Lovable**
+De site dient als digitaal visitekaartje en portfolio voor potentiële klanten en samenwerkingen.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d70deef8-b11f-419b-9ed7-801723808161) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Functionaliteiten
 
-**Use your preferred IDE**
+- **Homepage**: Introductie van mijn diensten, werkwijze en USP’s.
+- **Portfolio**: Een overzicht van afgeronde projecten.
+- **Over mij**: Info over mijn achtergrond en specialisaties.
+- **Contact**: Mogelijkheid om eenvoudig contact op te nemen.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Technologieën
 
-Follow these steps:
+Dit project maakt gebruik van de volgende technologieën:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **HTML**  
+- **CSS**  
+- **Tailwind CSS**  
+- **JavaScript**  
+- **React.js**  
+- **Next.js**  
+- **Figma** (voor prototyping & design)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📦 Installatie en Gebruik
 
-**Edit a file directly in GitHub**
+Volg deze stappen om het project lokaal te draaien:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Clone deze repository:
+   ```bash
+   git clone https://github.com/Marijn-Snoeren/personal-project.git
+   ```
+2. Ga naar de projectmap:
+   ```bash
+   cd personal-project
+   ```
+3. Installeer de benodigde afhankelijkheden:
+   ```bash
+   npm install
+   ```
+4. Start de ontwikkelserver:
+   ```bash
+   npm run dev
+   ```
+5. Open je browser en ga naar `http://localhost:3000`.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d70deef8-b11f-419b-9ed7-801723808161) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
