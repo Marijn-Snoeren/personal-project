@@ -16,10 +16,13 @@ De site dient als digitaal visitekaartje en portfolio voor potentiële klanten e
 
 ## 🚀 Functionaliteiten
 
-- **Homepage**: Introductie van mijn diensten, werkwijze en USP’s.
-- **Portfolio**: Een overzicht van afgeronde projecten.
-- **Over mij**: Info over mijn achtergrond en specialisaties.
-- **Contact**: Mogelijkheid om eenvoudig contact op te nemen.
+- **Header**: Bovenaan de website staat links mijn logo en rechts een contactknop.
+- **Hero**: Een pakkende introductie met krachtige tekst die de aandacht trekt.
+- **About**: Een korte toelichting over wie ik ben, wat ik doe en waar ik voor sta.
+- **Projects**: Een overzicht van projecten die ik heb ontworpen en/of ontwikkeld.
+- **Reviews**: Klantbeoordelingen die inzicht geven in de ervaringen met mijn werk.
+- **Call to Action**: Een motiverend blok dat bezoekers aanspoort om contact op te nemen.
+- **Footer**: Onderin de site met aanvullende informatie en navigatie.
 
 ---
 
